@@ -1,0 +1,176 @@
+/* Her starter desktop css */
+
+/* Header */
+
+.logo {
+  width: 160px;
+  height: 100%;
+}
+
+/* Body */
+
+h1 {
+  font-size: var(--desktop-font-size-h1);
+}
+
+h2 {
+  font-size: var(--desktop-font-size-h2);
+}
+
+h3 {
+  font-size: var(--desktop-font-size-h3);
+}
+
+p {
+  font-size: var(--desktop-font-size-p);
+}
+
+/* Her slutter desktop css */
+
+/* Her starter mobile css */
+@media (max-width: 450px) {
+  .logo {
+    width: 100px;
+    height: 100%;
+  }
+
+  h1 {
+    font-size: var(--mobile-font-size-h1);
+  }
+
+  h2 {
+    font-size: var(--mobile-font-size-h2);
+  }
+
+  h3 {
+    font-size: var(--mobile-font-size-h3);
+  }
+
+  p {
+    font-size: var(--mobile-font-size-p);
+  }
+}
+/* Her slutter mobile css */
+
+/* Her starter generelt css */
+
+header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #779fe5;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  justify-content: space-around;
+  /* font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px; */
+}
+
+.menu a {
+  color: #fff;
+}
+
+.menu a:hover {
+  color: var(--hover-color);
+}
+
+/*************/
+.menu li {
+  margin-right: 20px;
+}
+
+.menu li:last-child {
+  margin-right: 0;
+}
+
+.burger {
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.burger .line {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #ffffff;
+  margin-bottom: 5px;
+  transition: 0.2s linear;
+}
+.burger {
+  display: none;
+}
+@media (width<=450px) {
+  .menu {
+    display: none;
+  }
+  .burger {
+    display: block;
+    background-color: transparent;
+    border: 0;
+  }
+  .burger.active .line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+    transition: 0.2s linear;
+  }
+
+  .burger.active .line:nth-child(2) {
+    opacity: 0;
+    transition: 0.15s linear;
+  }
+
+  .burger.active .line:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+    transition: 0.2s linear;
+  }
+
+  nav.active .menu {
+    display: block;
+    background-color: #b6caed;
+    position: absolute;
+    top: 94px;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  nav.active .menu li {
+    margin: 10px 20px;
+  }
+
+  nav.active .menu a {
+    font-size: 24px;
+  }
+}
+/*************/
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+/* Her slutter generelt css */

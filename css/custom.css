@@ -1,0 +1,33 @@
+:root {
+  /* Generelt til css variabler */
+  /* Baggrund */
+  --color-bg: #fff;
+
+  /* Header */
+  --color-head-bg: #779fe5;
+  --hover-color: #212892;
+
+  /* Logo */
+
+  /* Her slutter generelt css variabler */
+
+  /* Mobilsite starter her */
+
+  /* Font-size */
+  --mobile-font-size-h1: 35px;
+  --mobile-font-size-h2: 25px;
+  --mobile-font-size-h3: 20px;
+  --mobile-font-size-p: 15px;
+
+  /* Mobilesite sluter */
+
+  /* Desktop site starter her */
+
+  /* Font-size */
+  --desktop-font-size-h1: 70px;
+  --desktop-font-size-h2: 50px;
+  --desktop-font-size-h3: 30px;
+  --desktop-font-size-p: 20px;
+
+  /* Desktop site slutter */
+}
