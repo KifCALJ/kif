@@ -1,5 +1,6 @@
 :root {
   /* Generelt til css variabler */
+
   /* Baggrund */
   --color-bg: #fff;
 
@@ -11,23 +12,25 @@
 
   /* Her slutter generelt css variabler */
 
+  /* Desktop site starter her */
+
+  /* Font-size */
+  --desktop-font-size-h1: 70px;
+  --desktop-font-size-h2: 40px;
+  --desktop-font-size-h3: 25px;
+  --desktop-font-size-h4: 20px;
+  --desktop-font-size-p: 15px;
+
+  /* Desktop site slutter */
+
   /* Mobilsite starter her */
 
   /* Font-size */
   --mobile-font-size-h1: 35px;
   --mobile-font-size-h2: 25px;
   --mobile-font-size-h3: 20px;
+  --mobile-font-size-h4: 17px;
   --mobile-font-size-p: 15px;
 
   /* Mobilesite sluter */
-
-  /* Desktop site starter her */
-
-  /* Font-size */
-  --desktop-font-size-h1: 70px;
-  --desktop-font-size-h2: 50px;
-  --desktop-font-size-h3: 30px;
-  --desktop-font-size-p: 20px;
-
-  /* Desktop site slutter */
 }
