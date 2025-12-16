@@ -1,0 +1,199 @@
+
+    body {
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #f0f4ff 0%, #e8f0ff 100%);
+      min-height: 100%;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    #box {
+      width: 100%;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 20px;
+    }
+
+    #main-container {
+      width: 100%;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    #main-container > div:first-child {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    #page-title {
+      font-size: 48px;
+      font-weight: 700;
+      color: #1e293b;
+      margin: 0 0 20px 0;
+      line-height: 1.2;
+    }
+
+    #page-subtitle {
+      font-size: 24px;
+      font-weight: 600;
+      color: #779fe5;
+      margin: 0 0 15px 0;
+    }
+
+    #page-description {
+      font-size: 18px;
+      color: #475569;
+      margin: 0;
+      line-height: 1.6;
+    }
+
+    #contact-form {
+      width: 100%;
+    }
+
+    #form-container {
+      background-color: #ffffff;
+      border-radius: 20px;
+      box-shadow: 0 20px 60px rgba(119, 159, 229, 0.15);
+      padding: 40px;
+    }
+
+    #form-container > div {
+      margin-bottom: 25px;
+    }
+
+    #form-container > div:last-of-type {
+      margin-bottom: 30px;
+    }
+
+    label {
+      display: block;
+      font-size: 16px;
+      font-weight: 600;
+      color: #1e293b;
+      margin-bottom: 8px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    textarea {
+      width: 100%;
+      padding: 14px 16px;
+      font-size: 16px;
+      font-family: inherit;
+      border: 2px solid #cbd5e1;
+      border-radius: 10px;
+      background-color: #f8fafc;
+      transition: all 0.3s ease;
+      color: #1e293b;
+    }
+
+    input[type="text"]:focus,
+    input[type="email"]:focus,
+    input[type="tel"]:focus,
+    textarea:focus {
+      outline: none;
+      border-color: #779fe5;
+      background-color: #ffffff;
+      box-shadow: 0 0 0 4px rgba(119, 159, 229, 0.1);
+    }
+
+    input::placeholder,
+    textarea::placeholder {
+      color: #94a3b8;
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 140px;
+    }
+
+    #submit-btn {
+      width: 100%;
+      padding: 16px 32px;
+      font-size: 18px;
+      font-weight: 700;
+      color: #ffffff;
+      background-color: #779fe5;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 15px rgba(119, 159, 229, 0.3);
+      font-family: inherit;
+    }
+
+    #submit-btn:hover {
+      background-color: #5b7fc7;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 25px rgba(119, 159, 229, 0.4);
+    }
+
+    #submit-btn:active {
+      transform: translateY(0);
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    #message-container {
+      margin-top: 20px;
+      padding: 16px;
+      border-radius: 10px;
+      text-align: center;
+      font-weight: 600;
+      font-size: 16px;
+    }
+
+    /* Responsive design */
+    @media (max-width: 768px) {
+      #app {
+        padding: 30px 15px;
+      }
+
+      #page-title {
+        font-size: 36px;
+      }
+
+      #page-subtitle {
+        font-size: 20px;
+      }
+
+      #page-description {
+        font-size: 16px;
+      }
+
+      #form-container {
+        padding: 30px 20px;
+      }
+
+      #submit-btn {
+        font-size: 16px;
+        padding: 14px 28px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      #page-title {
+        font-size: 28px;
+      }
+
+      #page-subtitle {
+        font-size: 18px;
+      }
+
+      #page-description {
+        font-size: 15px;
+      }
+
+      #form-container {
+        padding: 25px 15px;
+      }
+    }
