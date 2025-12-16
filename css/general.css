@@ -7,6 +7,17 @@
   height: 100%;
 }
 
+.socials img {
+  width: 50px;
+  height: 100%;
+  opacity: 0.8;
+  transition: opacity 0.2s ease;
+}
+
+.socials img:hover {
+  opacity: 1;
+}
+
 /* Body */
 
 h1 {
@@ -21,19 +32,66 @@ h3 {
   font-size: var(--desktop-font-size-h3);
 }
 
+h4 {
+  font-size: var(--desktop-font-size-h4);
+}
+
 p {
   font-size: var(--desktop-font-size-p);
 }
 
+main {
+  padding: 30px;
+}
+
+/* Footer */
+.footer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background: var(--color-head-bg);
+  padding: 20px;
+}
+
+.kontaktlink {
+  padding: 30px;
+}
+
+.kiflogosvg {
+  width: 150px;
+  height: auto;
+}
+
+.dgilogo {
+  width: 250px;
+  height: auto;
+}
+
+.gymdanmarklogo {
+  width: 350px;
+  height: auto;
+}
 /* Her slutter desktop css */
 
 /* Her starter mobile css */
 @media (max-width: 450px) {
+  /* Header */
   .logo {
     width: 100px;
     height: 100%;
   }
 
+  .socials img {
+    width: 20px;
+    height: 100%;
+    opacity: 0.8;
+    transition: opacity 0.2s ease;
+  }
+
+  .socials img:hover {
+    opacity: 1;
+  }
+
+  /* Body */
   h1 {
     font-size: var(--mobile-font-size-h1);
   }
@@ -46,8 +104,39 @@ p {
     font-size: var(--mobile-font-size-h3);
   }
 
+  h4 {
+    font-size: var(--mobile-font-size-h4);
+  }
+
   p {
     font-size: var(--mobile-font-size-p);
+  }
+
+  /* Footer */
+  .footer {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .kontaktlink {
+    width: 110px;
+  }
+
+  .kiflogosvg {
+    width: 75px;
+    height: auto;
+  }
+
+  .dgilogo {
+    width: 100px;
+    height: auto;
+  }
+
+  .gymdanmarklogo {
+    width: 150px;
+    height: auto;
   }
 }
 /* Her slutter mobile css */
@@ -79,8 +168,6 @@ nav {
   padding: 0;
   width: 100%;
   justify-content: space-around;
-  /* font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 20px; */
 }
 
 .menu a {
@@ -114,9 +201,11 @@ nav {
   margin-bottom: 5px;
   transition: 0.2s linear;
 }
+
 .burger {
   display: none;
 }
+
 @media (width<=450px) {
   .menu {
     display: none;
@@ -126,6 +215,7 @@ nav {
     background-color: transparent;
     border: 0;
   }
+
   .burger.active .line:nth-child(1) {
     transform: rotate(45deg) translate(5px, 5px);
     transition: 0.2s linear;
@@ -143,7 +233,7 @@ nav {
 
   nav.active .menu {
     display: block;
-    background-color: #b6caed;
+    background-color: #779fe5;
     position: absolute;
     top: 94px;
     left: 0;
@@ -171,6 +261,54 @@ nav {
 a {
   color: black;
   text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: italic;
 }
 
+h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+h4 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+ul {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.footer {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.kontaktlink {
+  color: #fff;
+  text-decoration: none;
+}
 /* Her slutter generelt css */
