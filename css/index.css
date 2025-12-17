@@ -34,8 +34,8 @@
 
   color: white;
   text-align: center;
-  font-size: 3rem;
-  line-height: 1.2;
+  font-size: var(--desktop-font-size-h1);
+  line-height: 1;
 
   padding: 30px 40px;
   border-radius: 6px;
@@ -163,7 +163,7 @@ okay det virker så ikke men jeg lader den stå så kan vi kigge på det sammen 
 
 .lastone h1 {
   position: absolute;
-  top: 30%;
+  top: 15%;
   left: 50%;
   transform: translate(-50%, -50%);
 
@@ -175,7 +175,7 @@ okay det virker så ikke men jeg lader den stå så kan vi kigge på det sammen 
 
 .lastone h2 {
   position: absolute;
-  top: 50%;
+  top: 35%;
   left: 50%;
   transform: translate(-50%, -50%);
 
@@ -187,7 +187,7 @@ okay det virker så ikke men jeg lader den stå så kan vi kigge på det sammen 
 
 .btn {
   position: absolute;
-  top: 65%;
+  top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
 
@@ -208,7 +208,7 @@ okay det virker så ikke men jeg lader den stå så kan vi kigge på det sammen 
 
 #kom {
   position: absolute;
-  top: 80%;
+  top: 65%;
   left: 50%;
   transform: translate(-50%, -50%);
 
