@@ -1,0 +1,210 @@
+
+    body {
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #f0f4ff 0%, #e8f0ff 100%);
+      min-height: 100%;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+/* Min selve box form */
+    #box {
+      width: 100%;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 20px;
+    }
+
+    /* Min main container til h1 & P */
+    #main-container {
+      width: 100%;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+  /* Min p container */
+    #main-container > div:first-child {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    /* Min h1 */
+    #page-title {
+      font-size: 48px;
+      font-weight: 700;
+      color: #1e293b;
+      margin: 0 0 20px 0;
+      line-height: 1.2;
+    }
+
+    /* Min subtitle */
+    #page-subtitle {
+      font-size: 24px;
+      font-weight: 600;
+      color: #779fe5;
+      margin: 0 0 15px 0;
+    }
+
+    /* Min description */
+    #page-description {
+      font-size: 18px;
+      color: #475569;
+      margin: 0;
+      line-height: 1.6;
+    }
+
+    /* Min kontakt form */
+    #contact-form {
+      width: 100%;
+    }
+
+    /* Min form container */
+    #form-container {
+      background-color: #ffffff;
+      border-radius: 20px;
+      box-shadow: 0 20px 60px rgba(119, 159, 229, 0.15);
+      padding: 40px;
+    }
+
+    /* Min form container divs */
+    #form-container > div {
+      margin-bottom: 25px;
+    }
+
+    /* Min sidste form container div */
+    #form-container > div:last-of-type {
+      margin-bottom: 30px;
+    }
+
+/* alle labels i min form */
+    label {
+      display: block;
+      font-size: 16px;
+      font-weight: 600;
+      color: #1e293b;
+      margin-bottom: 8px;
+    }
+
+    /* Input felter og textarea */
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    textarea {
+      width: 100%;
+      padding: 14px 16px;
+      font-size: 16px;
+      font-family: inherit;
+      border: 2px solid #cbd5e1;
+      border-radius: 10px;
+      background-color: #f8fafc;
+      transition: all 0.3s ease;
+      color: #1e293b;
+    }
+  
+/* Når du trykker på de forskellige input felter og textarea */
+    input[type="text"]:focus,
+    input[type="email"]:focus,
+    input[type="tel"]:focus,
+    textarea:focus {
+      outline: none;
+      border-color: #2e3137;
+      background-color: #ffffff;
+      box-shadow: 0 0 0 4px rgba(119, 159, 229, 0.1);
+    }
+
+    /* Min form validering */
+    form:has(:invalid) {
+      label::after {
+        content: "*";
+        color: #e11d48;
+        font-size: 14px;
+        font-weight: 500;
+      }
+    }
+
+    /* Placeholder tekst */
+    input::placeholder,
+    textarea::placeholder {
+      color: #94a3b8;
+    }
+
+    /* Textarea styling */
+    textarea {
+      resize: vertical;
+      min-height: 140px;
+    }
+
+    /* Min submit knap */
+    #submit-btn {
+      width: 100%;
+      padding: 16px 32px;
+      font-size: 18px;
+      font-weight: 700;
+      color: #ffffff;
+      background-color: #3f51ff;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 15px rgba(119, 159, 229, 0.3);
+      font-family: inherit;
+    }
+
+    /* Min submit knap hover */
+    #submit-btn:hover {
+      background-color: #5b7fc7;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 25px rgba(119, 159, 229, 0.4);
+    }
+
+
+  
+    /* Responsive design */
+    @media (max-width: 768px) {
+      #app {
+        padding: 30px 15px;
+      }
+
+      #page-title {
+        font-size: 36px;
+      }
+
+      #page-subtitle {
+        font-size: 20px;
+      }
+
+      #page-description {
+        font-size: 16px;
+      }
+
+      #form-container {
+        padding: 30px 20px;
+      }
+
+      #submit-btn {
+        font-size: 16px;
+        padding: 14px 28px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      #page-title {
+        font-size: 28px;
+      }
+
+      #page-subtitle {
+        font-size: 18px;
+      }
+
+      #page-description {
+        font-size: 15px;
+      }
+
+      #form-container {
+        padding: 25px 15px;
+      }
+    }
