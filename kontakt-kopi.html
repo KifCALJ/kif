@@ -8,6 +8,12 @@
     <link rel="stylesheet" href="css/hold.css" />
     <link rel="stylesheet" href="css/kontakt.css" />
     <link rel="stylesheet" href="css/kontakt-kopi.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
     <title>Karlslunde IF Gymnastik</title>
   </head>
   <body>
@@ -124,10 +130,10 @@
           </a>
         </div>
         <ul class="menu">
-          <li><a href="holdoversigt.html">Hold</a></li>
+          <li><a href="holdoversigt-kopi.html">Hold</a></li>
           <li><a href="aabenhal.html">Åben hal</a></li>
           <li><a href="galleri.html">Galleri</a></li>
-          <li><a href="kontakt.html">Kontakt</a></li>
+          <li><a href="kontakt-kopi.html">Kontakt</a></li>
           <li><a href="omos.html">Om os</a></li>
         </ul>
         <button class="burger">
@@ -137,43 +143,69 @@
         </button>
       </nav>
     </header>
-   <div id="box">
-    <div id="main-container">
-      <div>
-        <h1 id="page-title">Kontakt Os</h1>
-        <p id="page-subtitle">Vi glæder os til at høre fra dig</p>
-        <p id="page-description">Har du spørgsmål eller ønsker du mere information? Udfyld formularen nedenfor, så vender vi tilbage hurtigst muligt.</p>
-      </div>
-
-      <form id="contact-form">
-        <div id="form-container">
-          <div>
-            <label for="navn">Navn </label>
-            <input type="text" id="navn" name="navn" required placeholder="Dit fulde navn">
-          </div>
-
-          <div>
-            <label for="email">Email </label>
-            <input type="email" id="email" name="email" required placeholder="Email">
-          </div>
-
-          <div>
-            <label for="telefon">Telefon </label>
-            <input type="tel" id="telefon" name="telefon" placeholder="+45 12 34 56 78">
-          </div>
-
-          <div>
-            <label for="besked">Besked </label>
-            <textarea id="besked" name="besked" required rows="5" placeholder="Skriv din besked her..."></textarea>
-          </div>
-
-          <button type="submit" id="submit-btn">Send Besked</button>
-
-          <div id="message-container" class="hidden"></div>
+    <div id="box">
+      <div id="main-container">
+        <div>
+          <h1 id="page-title">Kontakt Os</h1>
+          <p id="page-subtitle">Vi glæder os til at høre fra dig</p>
+          <p id="page-description">
+            Har du spørgsmål eller ønsker du mere information? Udfyld formularen
+            nedenfor, så vender vi tilbage hurtigst muligt.
+          </p>
         </div>
-      </form>
+
+        <form id="contact-form">
+          <div id="form-container">
+            <div>
+              <label for="navn">Navn </label>
+              <input
+                type="text"
+                id="navn"
+                name="navn"
+                required
+                placeholder="Dit fulde navn"
+              />
+            </div>
+
+            <div>
+              <label for="email">Email </label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                placeholder="Email"
+              />
+            </div>
+
+            <div>
+              <label for="telefon">Telefon </label>
+              <input
+                type="tel"
+                id="telefon"
+                name="telefon"
+                placeholder="+45 12 34 56 78"
+              />
+            </div>
+
+            <div>
+              <label for="besked">Besked </label>
+              <textarea
+                id="besked"
+                name="besked"
+                required
+                rows="5"
+                placeholder="Skriv din besked her..."
+              ></textarea>
+            </div>
+
+            <button type="submit" id="submit-btn">Send Besked</button>
+
+            <div id="message-container" class="hidden"></div>
+          </div>
+        </form>
+      </div>
     </div>
-  </div>
     <footer></footer>
     <script src="js/burger.js"></script>
     <script src="js/kontakt.js"></script>
