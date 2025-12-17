@@ -268,26 +268,30 @@
           </h4>
         </article>
         <form id="webform">
-          <fieldset>
+          <fieldset class="form-grid">
             <div class="form-group">
               <label for="first_name">Barnets fornavn</label>
-              <input required type="text" id="first_name" />
+              <input required type="text" id="barn_fornavn" />
               <p class="error-message" hidden>Please enter a value</p>
-
+            </div>
+            <div class="form-group">
               <label for="last_name">Barnets efternavn</label>
-              <input required type="text" id="last_name" />
+              <input required type="text" id="barn_efternavn" />
               <p class="error-message" hidden>Please enter a value</p>
+            </div>
+            <div class="form-group">
               <label for="last_name">Barnets fødselsdato</label>
               <input required type="date" id="birthday" />
               <p class="error-message" hidden>Please enter a value</p>
             </div>
             <div class="form-group">
               <label for="first_name">Forældre/værge's fornavn</label>
-              <input required type="text" id="first_name" />
+              <input required type="text" id="forældre_fornavn" />
               <p class="error-message" hidden>Please enter a value</p>
-
+            </div>
+            <div class="form-group">
               <label for="last_name">Forældre/værge's efternavn</label>
-              <input required type="text" id="last_name" />
+              <input required type="text" id="forældre_efternavn" />
               <p class="error-message" hidden>Please enter a value</p>
             </div>
             <div class="form-group">
@@ -309,7 +313,7 @@
             >
           </div>
 
-          <button type="submit">Sign up here!</button>
+          <button type="submit">Indsend oplysninger</button>
         </form>
       </section>
     </main>

@@ -46,28 +46,25 @@ main {
 
 /* Footer */
 .footer {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
   background: var(--color-head-bg);
-  padding: 20px;
-}
-
-.kontaktlink {
-  padding: 30px;
+  padding: 40px 20px;
+  gap: 20px;
 }
 
 .kiflogosvg {
+  width: 120px;
+  height: auto;
+}
+.dgilogo {
   width: 150px;
   height: auto;
 }
-
-.dgilogo {
-  width: 250px;
-  height: auto;
-}
-
 .gymdanmarklogo {
-  width: 350px;
+  width: 200px;
   height: auto;
 }
 /* Her slutter desktop css */
@@ -78,17 +75,36 @@ main {
   .logo {
     width: 100px;
     height: 100%;
+    order: 1;
+  }
+
+  .socials {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    order: 2;
   }
 
   .socials img {
-    width: 20px;
-    height: 100%;
+    width: 25px;
+    height: auto;
     opacity: 0.8;
     transition: opacity 0.2s ease;
   }
 
   .socials img:hover {
     opacity: 1;
+  }
+
+  .burger {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 20px;
+    width: 30px;
+    order: 3;
+    z-index: 10;
+    margin-left: 10px;
   }
 
   /* Body */
@@ -114,34 +130,37 @@ main {
 
   /* Footer */
   .footer {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
+    text-align: center;
   }
 
   .kontaktlink {
-    width: 110px;
+    width: 100%;
+    padding: 10px 0;
+    margin-bottom: 20px;
   }
 
   .kiflogosvg {
-    width: 75px;
-    height: auto;
+    width: 80px;
   }
-
   .dgilogo {
-    width: 100px;
-    height: auto;
+    width: 120px;
   }
-
   .gymdanmarklogo {
-    width: 150px;
-    height: auto;
+    width: 160px;
   }
 }
+
 /* Her slutter mobile css */
 
 /* Her starter generelt css */
+
+img,
+svg {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
 
 header {
   position: sticky;
@@ -153,11 +172,13 @@ header {
   width: 100%;
   box-sizing: border-box;
   background-color: #779fe5;
+  z-index: 1000;
 }
 
 nav {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   width: 100%;
 }
 
@@ -191,6 +212,10 @@ nav {
   width: 30px;
   height: 20px;
   cursor: pointer;
+  background: transparent;
+  border: none;
+  padding: 0;
+  display: none;
 }
 
 .burger .line {
@@ -198,37 +223,24 @@ nav {
   width: 100%;
   height: 2px;
   background-color: #ffffff;
-  margin-bottom: 5px;
   transition: 0.2s linear;
-}
-
-.burger {
-  display: none;
 }
 
 @media (width<=450px) {
   .menu {
     display: none;
   }
-  .burger {
-    display: block;
-    background-color: transparent;
-    border: 0;
-  }
 
   .burger.active .line:nth-child(1) {
     transform: rotate(45deg) translate(5px, 5px);
-    transition: 0.2s linear;
   }
 
   .burger.active .line:nth-child(2) {
     opacity: 0;
-    transition: 0.15s linear;
   }
 
   .burger.active .line:nth-child(3) {
-    transform: rotate(-45deg) translate(5px, -5px);
-    transition: 0.2s linear;
+    transform: rotate(-45deg) translate(6px, -7px);
   }
 
   nav.active .menu {
@@ -240,12 +252,6 @@ nav {
     width: 100%;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
     z-index: 1;
-  }
-
-  nav {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
   }
 
   nav.active .menu li {
