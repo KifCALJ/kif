@@ -1,6 +1,9 @@
 /* Her starter desktop css */
 
 /* Header */
+header {
+  z-index: 10;
+}
 
 .logo {
   width: 160px;
