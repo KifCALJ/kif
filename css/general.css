@@ -302,6 +302,12 @@ p {
   font-style: normal;
 }
 
+form {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
 ul {
   font-family: "Poppins", sans-serif;
   font-weight: 300;
